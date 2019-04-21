@@ -1,0 +1,35 @@
+{
+  "name": "willothewisp",
+  "version": "0.0.1",
+  "description": "ETHCapeTown Hackathon project",
+  "main": "index.js",
+  "dependencies": {
+    "@ethersproject/abi": "^5.0.0-beta.128",
+    "@ethersproject/cli": "^5.0.0-beta.129",
+    "ethers": "^5.0.0-beta.133"
+  },
+  "bin": {
+    "wisp": "./bin/wisp.js"
+  },
+  "scripts": {
+    "wisp": "node ./bin/wisp.js",
+    "deploy": "ethers --debug --network ropsten --account wallet-ropsten.json deploy contracts/test.sol",
+    "test": "ethers --debug --network ropsten --account wallet-ropsten.json run scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricmoo/ETHCapeTown.git"
+  },
+  "keywords": [
+    "ETHCapeTown"
+  ],
+  "author": "Richard Moore <me@ricmoo.com> (https://www.ricmoo.com)",
+  "contributors": [
+    "Yuet-Loo Wong <yuet.wong@gmail.com> (http://www.yuetloo.com)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricmoo/ETHCapeTown/issues"
+  },
+  "homepage": "https://github.com/ricmoo/ETHCapeTown#readme"
+}
